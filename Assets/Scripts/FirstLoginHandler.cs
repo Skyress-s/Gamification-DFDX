@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Animator))]
@@ -29,8 +30,21 @@ public class FirstLoginHandler : MonoBehaviour
     public void OnFinishWritingName()
     {
         Debug.Log(inputField);
-        _animator.Play(finishNameTransitionClip.name);
-        SceneHandler.LoadSceneWithDefaultTransition("S_TEMP");
+        // SceneHandler.LoadSceneWithDefaultTransition("S_TEMP");
+        Scene prev = SceneManager.GetActiveScene();
+        var handler = SceneManager.LoadSceneAsync("S_TEMP", LoadSceneMode.Additive);
+        handler.completed += operation => {
+            _animator.Play(finishNameTransitionClip.name);
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("S_TEMP"));
+            StartCoroutine(WaitAndUnloadScene(finishNameTransitionClip.length, prev.name));
+        };
+
+    }
+
+    IEnumerator WaitAndUnloadScene(float delay, string sceneName)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.UnloadSceneAsync(sceneName);
     }
     
     #endregion

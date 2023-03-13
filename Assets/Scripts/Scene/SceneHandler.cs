@@ -9,21 +9,38 @@ using UnityEngine.SceneManagement;
 // SomevoidAsyncOperation(); // will pause program
 
 public static class SceneHandler {
+
+    public static string NewSceneName => _newSceneName;
+    private static string _newSceneName = "";
+    
+    public static string PreviousSceneName => _previousSceneName;
+    private static string _previousSceneName = "";
     public static void LoadSceneWithDefaultTransition(string sceneName) {
-        Scene activeScene =  SceneManager.GetActiveScene();
-
-        AsyncOperation loadSceneOperation = SceneManager.LoadSceneAsync("S_GenericSceneTransition");
-        loadSceneOperation.completed += operation => {
-            
+        _previousSceneName =  SceneManager.GetActiveScene().name;
+        var handle = SceneManager.LoadSceneAsync("S_GenericSceneTransition", LoadSceneMode.Additive);
+        handle.completed += operation => {
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("S_GenericSceneTransition"));
+            _newSceneName = sceneName;
         };
-        
-        AsyncOperation newSceneOperation = SceneManager.LoadSceneAsync(sceneName);
-
-        newSceneOperation.completed += operation => {
-            SceneManager.UnloadSceneAsync(activeScene);
-        };
+        // Debug.Log(activeScene.name);
+        //
+        // AsyncOperation loadSceneOperation = SceneManager.LoadSceneAsync("S_GenericSceneTransition");
+        // loadSceneOperation.completed += operation => {
+        //     
+        // };
+        //
+        // AsyncOperation newSceneOperation = SceneManager.LoadSceneAsync(sceneName);
+        //
+        // newSceneOperation.completed += operation => {
+        //     
+        // };
     }
 
+    public static async void waitLoad(string str)
+    {
+        
+    }
+    
     public static async void SomevoidAsyncOperation() {
         await Task.Delay(10000);
     }
