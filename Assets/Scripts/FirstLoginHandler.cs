@@ -13,7 +13,8 @@ public class FirstLoginHandler : MonoBehaviour
 
     [SerializeField] private AnimationClip finishNameTransitionClip;
     [SerializeField] private TMP_InputField inputField;
-
+    [SerializeField] private string mainMenuScene;
+    
     private Animator _animator;
     private void Awake()
     {
@@ -32,10 +33,10 @@ public class FirstLoginHandler : MonoBehaviour
         Debug.Log(inputField);
         // SceneHandler.LoadSceneWithDefaultTransition("S_TEMP");
         Scene prev = SceneManager.GetActiveScene();
-        var handler = SceneManager.LoadSceneAsync("S_TEMP", LoadSceneMode.Additive);
+        var handler = SceneManager.LoadSceneAsync(mainMenuScene, LoadSceneMode.Additive);
         handler.completed += operation => {
             _animator.Play(finishNameTransitionClip.name);
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("S_TEMP"));
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(mainMenuScene));
             StartCoroutine(WaitAndUnloadScene(finishNameTransitionClip.length, prev.name));
         };
 

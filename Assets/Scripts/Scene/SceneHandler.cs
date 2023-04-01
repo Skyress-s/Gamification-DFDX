@@ -34,14 +34,16 @@ public static class SceneHandler {
         // newSceneOperation.completed += operation => {
         //     
         // };
+
+        // var a = waitLoad("awdawdl");
+        // Task g = SomevoidAsyncOperation();
     }
 
-    public static async void waitLoad(string str)
-    {
-        
+    public static async Task<string> waitLoad(string str) {
+        return str;
     }
     
-    public static async void SomevoidAsyncOperation() {
+    public static async Task SomevoidAsyncOperation() {
         await Task.Delay(10000);
     }
     public static async Task<float> SomeOtherOperation() {

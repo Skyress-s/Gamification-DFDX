@@ -10,7 +10,6 @@ public class TransitionSceneHandler : MonoBehaviour
     [SerializeField] private AnimationClip introClip;
     [SerializeField] private AnimationClip outroClip;
 
-
     private void Start()
     {
         animator.Play(introClip.name);
