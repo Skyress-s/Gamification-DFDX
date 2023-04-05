@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,7 +25,7 @@ public class TaskBarBackend : MonoBehaviour
         if (_dataManager.stringsDictionary.ContainsKey("prevScene")) _prevSceneName = _dataManager.stringsDictionary["prevScene"];
         
         _currentSceneName = SceneManager.GetActiveScene().name;
-        // Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
+        Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
         if (_currentSceneName == profileSceneName)
         {
             // Debug.LogError("return from profile");
@@ -51,7 +50,7 @@ public class TaskBarBackend : MonoBehaviour
         Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
         if (_currentSceneName == noteSceneName)
         {
-            // Debug.LogError("return from notes");
+            Debug.LogError("return from notes");
             _sceneHanlderComp.LoadScene(_prevSceneName);
             return;
         }
