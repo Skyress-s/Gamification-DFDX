@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 // Task<float> asyncFloat = SomeOtherOperation(); // asyncFloat.Start();

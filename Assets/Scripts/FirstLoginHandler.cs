@@ -1,11 +1,8 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Animator))]
 public class FirstLoginHandler : MonoBehaviour
@@ -22,7 +19,9 @@ public class FirstLoginHandler : MonoBehaviour
         if (finishNameTransitionClip == null || inputField == null)
         {
             Debug.LogError($"ERROR {gameObject.name} HAS UNSET REFERENCES");
+#if UNITY_EDITOR
             Selection.activeGameObject = gameObject;
+#endif
             return;
         }
     }

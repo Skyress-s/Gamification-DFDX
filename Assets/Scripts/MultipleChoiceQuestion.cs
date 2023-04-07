@@ -1,8 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "New Multiple Choice Question", menuName = "Multiple Choice Question", order = 1)]
 public class MultipleChoiceQuestion : ScriptableObject {
