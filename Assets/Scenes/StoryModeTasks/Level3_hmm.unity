@@ -2981,7 +2981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1740ef3e1f3aec43a73ebd18f9ad375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 0}
+  question: {fileID: 11400000, guid: 24790303e938d7f4090ebf47970e4e79, type: 2}
   buttonsWrapper: {fileID: 1181405780}
   title: {fileID: 1444189800}
 --- !u!1001 &6244829190649518532
