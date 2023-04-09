@@ -29,5 +29,26 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level1_Dynamic.unity
     guid: 71465df5f1d1ec043be26b756646198a
+  - enabled: 1
+    path: Assets/Scenes/S_ProfileSettings_V2.unity
+    guid: e0b5bb96ad93ad04da6099d2d90ea404
+  - enabled: 1
+    path: Assets/Scenes/S_WorldOverView.unity
+    guid: 81ea0d5f0c839c747b9ec3d8a8e329f7
+  - enabled: 1
+    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task1.unity
+    guid: 3306614af39ea054ca437e52bb3c368f
+  - enabled: 1
+    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task2.unity
+    guid: c27154e110117f84585f188c452aed0b
+  - enabled: 1
+    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task3.unity
+    guid: d850d083698c9d045bd0c46d98c2dd64
+  - enabled: 1
+    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task4.unity
+    guid: 14663240999a02c4d8334427f0643c3b
+  - enabled: 1
+    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task5.unity
+    guid: 50bbefe6f7d95784b87c41c6d3a90352
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 43124a74a8ef2b14ea94a51bcd1e1d7f, type: 2}
