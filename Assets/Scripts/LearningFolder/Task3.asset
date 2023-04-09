@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9c09116a3450e645b38ea8657a35fc1, type: 3}
-  m_Name: Task1
+  m_Name: Task3
   m_EditorClassIdentifier: 
-  correctAnswer: 0
+  correctAnswer: 3
   question: quesion juan
   answer1: a for anders
   answer2: b for anders
   answer3: c for anders
-  answer4: d for anders
+  answer4: D
   mathGuidance:
-  - guidance: Three VIM comboes a day keeps the mouse users away?
+  - guidance: Why car goe fast?e
     AnimationClip: {fileID: 7400000, guid: 012bf1266c0c9ee44be85492bee83b68, type: 2}
-  - guidance: It's dangerous to go alone! Take this.
+  - guidance: It's dangerous, go alone!
     AnimationClip: {fileID: 7400000, guid: 012bf1266c0c9ee44be85492bee83b68, type: 2}
-  correctAnswerString: A
-  incorrectAnswerString: B
+  correctAnswerString: D
+  incorrectAnswerString: C
