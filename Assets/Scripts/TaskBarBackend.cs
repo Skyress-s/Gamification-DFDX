@@ -66,6 +66,10 @@ public class TaskBarBackend : MonoBehaviour
 
     public void OnBackButtonClick()
     {
+        if (SceneManager.GetActiveScene().name == menuSceneName)
+        {
+            Application.Quit();
+        }
         _sceneHanlderComp.LoadScene(menuSceneName);
     }
 }

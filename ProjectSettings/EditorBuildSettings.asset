@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/S_ProfileSettings.unity
     guid: ade88d19033b88348aa7aae1c88be658
+  - enabled: 1
+    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level1_Dynamic.unity
+    guid: 71465df5f1d1ec043be26b756646198a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 43124a74a8ef2b14ea94a51bcd1e1d7f, type: 2}
