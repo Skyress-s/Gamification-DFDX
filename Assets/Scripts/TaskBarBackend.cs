@@ -15,15 +15,14 @@ public class TaskBarBackend : MonoBehaviour
 
     private void Start()
     {
-        //_dataManager = FindObjectOfType<DataManager>();
+        _dataManager = FindObjectOfType<DataManager>();
         _sceneHanlderComp = GetComponent<SceneHanlderComponent>();
         _currentSceneName = SceneManager.GetActiveScene().name;
     }
 
     public void OnRightButtonClick()
     {
-        //if (_dataManager.stringsDictionary.ContainsKey("prevScene")) _prevSceneName = _dataManager.stringsDictionary["prevScene"];
-        _prevSceneName = PlayerPrefs.GetString("prevScene", menuSceneName);
+        if (_dataManager.stringsDictionary.ContainsKey("prevScene")) _prevSceneName = _dataManager.stringsDictionary["prevScene"];
         
         _currentSceneName = SceneManager.GetActiveScene().name;
         Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
@@ -39,16 +38,13 @@ public class TaskBarBackend : MonoBehaviour
         }
         // Debug.LogError("open profile");
         _prevSceneName = _currentSceneName;
-        //_dataManager.stringsDictionary["prevScene"] = _prevSceneName;
-        PlayerPrefs.SetString("prevScene", _prevSceneName);
-        PlayerPrefs.Save();
+        _dataManager.stringsDictionary["prevScene"] = _prevSceneName;
         _sceneHanlderComp.LoadScene(profileSceneName);
     }
 
     public void OnLeftButtonClick()
     {
-        //if (_dataManager.stringsDictionary.ContainsKey("prevScene")) _prevSceneName = _dataManager.stringsDictionary["prevScene"];
-        _prevSceneName = PlayerPrefs.GetString("prevScene", menuSceneName);
+        if (_dataManager.stringsDictionary.ContainsKey("prevScene")) _prevSceneName = _dataManager.stringsDictionary["prevScene"];
         
         _currentSceneName = SceneManager.GetActiveScene().name;
         Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
@@ -64,15 +60,12 @@ public class TaskBarBackend : MonoBehaviour
         }
         // Debug.LogError("open notes");
         _prevSceneName = _currentSceneName;
-        //_dataManager.stringsDictionary["prevScene"] = _prevSceneName;
-        PlayerPrefs.SetString("prevScene", _prevSceneName);
-        PlayerPrefs.Save();
+        _dataManager.stringsDictionary["prevScene"] = _prevSceneName;
         _sceneHanlderComp.LoadScene(noteSceneName);
     }
 
     public void OnBackButtonClick()
     {
-        PlayerPrefs.Save();
         _sceneHanlderComp.LoadScene(menuSceneName);
     }
 }
