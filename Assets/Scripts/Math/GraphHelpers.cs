@@ -31,7 +31,7 @@ public static class GraphHelpers
         List<Vector2> points = new List<Vector2>();
         for (float x = xMinMax.x; x < xMinMax.y + resolution/2f; x += resolution) {
             points.Add(new Vector2(x, func(x)));
-            Debug.Log($"point {x} : {points[points.Count-1]}");   
+            // Debug.Log($"point {x} : {points[points.Count-1]}");   
         }
 
         if (yMinMax == null) {
