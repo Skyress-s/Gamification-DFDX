@@ -39,10 +39,11 @@ public class MultipleChoiceHandler : MonoBehaviour
 
     private void OnButtonClicked(int arg0) {
         if (arg0 == (int)question.correctAnswer) {
-            buttonsWrapper.SetHighlight(0, Color.green);
+            buttonsWrapper.SetHighlight(0, Color.red);
             buttonsWrapper.SetHighlight(1, Color.red);
             buttonsWrapper.SetHighlight(2, Color.red);
             buttonsWrapper.SetHighlight(3, Color.red);
+            buttonsWrapper.SetHighlight(arg0, Color.green);
         }
         else {
             // onRequestGuidance?.Invoke();
@@ -63,11 +64,12 @@ public class MultipleChoiceHandler : MonoBehaviour
 
     void PlayMathDialog(MathDialog mathDialog){
         var animator = _mathematician.GetComponentInChildren<Animator>();
-        animator.Play(mathDialog.AnimationClip.name, 0, 0.1f);
+        if (mathDialog.AnimationClip != null) 
+            animator.Play(mathDialog.AnimationClip.name, 0, 0.1f);
+        
         Vector3[] corners = new Vector3[4];
         _mathematician.GetComponent<RectTransform>().GetWorldCorners(corners);
         MathematicianUtils.PlayMessage(mathDialog, corners[1], transform);
-        
     }
     
     /*

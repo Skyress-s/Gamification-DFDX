@@ -75,8 +75,8 @@ public class MultipleChoiceButtonsWrapper : MonoBehaviour
     }
     
     public void SetHighlight(int index, Color color) {
-        
         Transform backgroundTransform = GetButtonFromIndex(index).transform.GetChild(0);
+        LeanTween.cancel(backgroundTransform.gameObject);
         LeanTween.moveLocal(backgroundTransform.gameObject, Vector3.zero, 1.2f).setEaseOutCirc();
         backgroundTransform.GetComponent<Image>().color = color;
     }
