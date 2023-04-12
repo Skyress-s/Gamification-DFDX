@@ -58,7 +58,7 @@ public static class GraphHelpers
         lr.positionCount = points.Count;
 
         if (style == null) {
-            style =  new GraphStyle() {color = Color.white, width = 0.1f, endCap = 4};
+            style =  new GraphStyle() {color = Color.white, width = 0.1f*0.5f, endCap = 4};
         }
 
         lr.startColor = style.Value.color;
