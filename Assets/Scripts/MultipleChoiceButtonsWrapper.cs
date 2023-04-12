@@ -14,9 +14,11 @@ public class MultipleChoiceButtonsWrapper : MonoBehaviour
     public Button Button2 => button2;
     public Button Button3 => button3;
     public Button Button4 => button4;
-
-    public UnityEvent onCorrectAnswer = new UnityEvent();
-    public UnityEvent onWrongAnswer = new UnityEvent();
+    
+    public UnityEvent<int> onButtonClicked = new UnityEvent<int>();
+    
+    // public UnityEvent onCorrectAnswer = new UnityEvent();
+    // public UnityEvent onWrongAnswer = new UnityEvent();
 
     private void Start() {
         button1.onClick.AddListener(() => OnButtonClicked(0));
@@ -26,7 +28,7 @@ public class MultipleChoiceButtonsWrapper : MonoBehaviour
     }
 
     private void OnButtonClicked(int p0) {
-        
+        onButtonClicked?.Invoke(p0);
     }
 
 

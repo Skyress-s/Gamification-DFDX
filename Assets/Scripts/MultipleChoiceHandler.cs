@@ -28,16 +28,25 @@ public class MultipleChoiceHandler : MonoBehaviour
         
         onRequestGuidance += PlayGuidance;
         
+        buttonsWrapper.onButtonClicked.AddListener(OnButtonClicked);
         
         
         
         // testing todo remove
-        buttonsWrapper.SetHighlight(0, Color.green);
-        buttonsWrapper.SetHighlight(1, Color.red);
-        buttonsWrapper.SetHighlight(2, Color.red);
-        buttonsWrapper.SetHighlight(3, Color.red);
         
-        var task = PlayGuidanceSequence();
+        // var task = PlayGuidanceSequence();
+    }
+
+    private void OnButtonClicked(int arg0) {
+        if (arg0 == (int)question.correctAnswer) {
+            buttonsWrapper.SetHighlight(0, Color.green);
+            buttonsWrapper.SetHighlight(1, Color.red);
+            buttonsWrapper.SetHighlight(2, Color.red);
+            buttonsWrapper.SetHighlight(3, Color.red);
+        }
+        else {
+            onRequestGuidance?.Invoke();
+        }
     }
 
 
@@ -49,8 +58,10 @@ public class MultipleChoiceHandler : MonoBehaviour
         MathematicianUtils.PlayMessage(question.mathGuidance[0], corners[1], transform);
     }
     
+    /*
     async Task PlayGuidanceSequence() {
         await Task.Delay(2000);
         onRequestGuidance?.Invoke();
     }
+*/
 }

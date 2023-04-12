@@ -49,8 +49,8 @@ public static class GraphHelpers
         Vector3 topRight = corners[2];
         
         // Debug.Log($"BOTTOM {bottomLeft}  | TOP {topRight}");
-        // (new GameObject("BOTTOMRIGHT")).transform.position = bottomLeft;
-        // (new GameObject("TOPLEFT")).transform.position = topRight;
+        (new GameObject("BOTTOMRIGHT")).transform.position = bottomLeft;
+        (new GameObject("TOPLEFT")).transform.position = topRight;
         
         LineRenderer lr = go.AddComponent<LineRenderer>();
         // lr.useWorldSpace = false;
