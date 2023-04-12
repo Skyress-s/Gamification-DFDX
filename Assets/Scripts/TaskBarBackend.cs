@@ -26,10 +26,10 @@ public class TaskBarBackend : MonoBehaviour
         _prevSceneName = PlayerPrefs.GetString("prevScene", menuSceneName);
         
         _currentSceneName = SceneManager.GetActiveScene().name;
-        Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
+        // Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
         if (_currentSceneName == profileSceneName)
         {
-            // Debug.LogError("return from profile");
+            // // Debug.LogError("return from profile");
             _sceneHanlderComp.LoadScene(_prevSceneName);
             return;
         }
@@ -37,7 +37,7 @@ public class TaskBarBackend : MonoBehaviour
         {
             return;   
         }
-        // Debug.LogError("open profile");
+        // // Debug.LogError("open profile");
         _prevSceneName = _currentSceneName;
         // _dataManager.stringsDictionary["prevScene"] = _prevSceneName;
         PlayerPrefs.SetString("prevScene", _prevSceneName);
@@ -51,10 +51,10 @@ public class TaskBarBackend : MonoBehaviour
         _prevSceneName = PlayerPrefs.GetString("prevScene", menuSceneName);
         
         _currentSceneName = SceneManager.GetActiveScene().name;
-        Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
+        // Debug.LogError("Scenes: " + _currentSceneName + " | " + noteSceneName + " | " + _prevSceneName);
         if (_currentSceneName == noteSceneName)
         {
-            Debug.LogError("return from notes");
+            // Debug.LogError("return from notes");
             _sceneHanlderComp.LoadScene(_prevSceneName);
             return;
         }
@@ -62,7 +62,7 @@ public class TaskBarBackend : MonoBehaviour
         {
             return;   
         }
-        // Debug.LogError("open notes");
+        // // Debug.LogError("open notes");
         _prevSceneName = _currentSceneName;
         // _dataManager.stringsDictionary["prevScene"] = _prevSceneName;
         PlayerPrefs.SetString("prevScene", _prevSceneName);
