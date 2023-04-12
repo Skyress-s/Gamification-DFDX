@@ -14,7 +14,7 @@ public class GraphDrawer : MonoBehaviour {
         Func<float, float> func = f => {
             float sum = 0;
             for (int i = 0; i < coefficiens.Count; i++) {
-                sum +=  Mathf.Pow(f, i+1)*coefficiens[i];
+                sum +=  Mathf.Pow(f, i)*coefficiens[i];
             }
 
             return sum;
