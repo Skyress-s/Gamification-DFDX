@@ -7,7 +7,7 @@ public static class MathematicianUtils
     public static void PlayMessage(MathDialog mathDialog, Vector3 position, Transform parent) {
         // instantiate helper bubble and set transforms
         Transform helperBubble = Addressables.InstantiateAsync("HelperBubble", parent).WaitForCompletion().transform;
-        helperBubble.localScale = Vector3.one * 0.1f;
+        helperBubble.localScale = Vector3.one * 0.04f;
         helperBubble.position = position;
         // helperBubble.Translate(Vector3.forward * 100f);
         
