@@ -6,8 +6,10 @@ using UnityEngine;
 public class GraphDrawer : MonoBehaviour {
     public RectTransform rectTransform;
     [Tooltip("First element is the constant, second is the linear coefficient, third is the quadratic coefficient, etc.")]
-    [SerializeField]internal List<float> coefficiens = new List<float>();
+    [SerializeField] private List<float> coefficiens = new List<float>();
+    [SerializeField] private int segments = 24;
     [SerializeField] internal Vector2 xMinMax = new Vector2(0f, 1f);
+
     private void Start() {
         // Func<float,float> a = f => 22f * f 
 			
@@ -20,7 +22,9 @@ public class GraphDrawer : MonoBehaviour {
 
             return sum;
         };
-        var grapt =GraphHelpers.Create(rectTransform, func, 0.1f, xMinMax);
+
+        var grapt =GraphHelpers.Create(rectTransform, func,(((float)((2 << 5)>> 5)) / Mathf.Pow(2,10)) , xMinMax);
+
     }
 }
 
