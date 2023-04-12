@@ -27,13 +27,9 @@ public static class GraphHelpers
     //     
     // }
 
-    public static graphTest Create(RectTransform parent, Func<float, float> func, float resolution, Vector2 xMinMax, Vector2? yMinMax = null, GraphStyle? style = null) {
-        List<Vector2> points = new List<Vector2>();
-        for (float x = xMinMax.x; x < xMinMax.y + resolution/2f; x += resolution) {
-            points.Add(new Vector2(x, func(x)));
-            // Debug.Log($"point {x} : {points[points.Count-1]}");   
-        }
-
+    public static graphTest Create(RectTransform parent, List<Vector2> points, float resolution, Vector2 xMinMax,
+        Vector2? yMinMax = null, GraphStyle? style = null) {
+        
         if (yMinMax == null) {
             float min = points.Min(v => v.y);
             float max = points.Max(v => v.y);
@@ -58,7 +54,7 @@ public static class GraphHelpers
         lr.positionCount = points.Count;
 
         if (style == null) {
-            style =  new GraphStyle() {color = Color.white, width = 0.1f, endCap = 4};
+            style =  new GraphStyle() {color = Color.white, width = 0.1f*0.5f, endCap = 4};
         }
 
         lr.startColor = style.Value.color;
@@ -78,8 +74,13 @@ public static class GraphHelpers
 
         return new graphTest(go, lr);
     }
-
-    // static LineRenderer CreateLineRenderer(Rect rect, ref List<Vector2> points) {
-    //     
-    // }
+    public static graphTest Create(RectTransform parent, Func<float, float> func, float resolution, Vector2 xMinMax, Vector2? yMinMax = null, GraphStyle? style = null) {
+        List<Vector2> points = new List<Vector2>();
+        for (float x = xMinMax.x; x < xMinMax.y + resolution/2f; x += resolution) {
+            points.Add(new Vector2(x, func(x)));
+            // Debug.Log($"point {x} : {points[points.Count-1]}");   
+        }
+        
+        return Create(parent, points, resolution, xMinMax, yMinMax, style);
+    }
 }
