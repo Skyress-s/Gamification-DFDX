@@ -12,16 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c09116a3450e645b38ea8657a35fc1, type: 3}
   m_Name: Task2
   m_EditorClassIdentifier: 
-  correctAnswer: 1
-  question: quesion juan
-  answer1: a for anders
-  answer2: b for anders
-  answer3: c for anders
-  answer4: d for anders
+  correctAnswer: 0
+  question: The distance from Euler to a car is 0m after 0s, 11m after 0.5s, 11m
+    after 3s, and 0m after 3.5s. What's the average speed from 0s to 0.5s, 0.5s to
+    2.5s, and 2.5s to 3s?
+  answer1: 22m/s, 0m/s, and -22m/s
+  ans1MathDialog:
+    guidance: Amazing!
+    AnimationClip: {fileID: 0}
+  answer2: 20m/s, 10m/s, and -20m/s
+  ans2MathDialog:
+    guidance: Have you chosen the right starts and stops?
+    AnimationClip: {fileID: 0}
+  answer3: -22m/s, 0m/s, and 22m/s
+  ans3MathDialog:
+    guidance: This is close, but backwards!
+    AnimationClip: {fileID: 0}
+  answer4: 11m/s, 22m/s, and -11m/s
+  ans4MathDialog:
+    guidance: Have you chosen the right starts and stops?
+    AnimationClip: {fileID: 0}
   mathGuidance:
-  - guidance: Three VIM comboes a day keeps the mouse users away?
+  - guidance: The changes in distances are 11m, 0m, and -11m.
     AnimationClip: {fileID: 7400000, guid: 012bf1266c0c9ee44be85492bee83b68, type: 2}
-  - guidance: It's dangerous to go alone! Take this.
+  - guidance: The changes in time are 0.5s, 2.5s, and 0.5s.
     AnimationClip: {fileID: 7400000, guid: 012bf1266c0c9ee44be85492bee83b68, type: 2}
   correctAnswerString: B
   incorrectAnswerString: C
