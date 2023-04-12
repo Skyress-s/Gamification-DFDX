@@ -1297,19 +1297,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 380526353}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 380526351}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &380526353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1551,19 +1539,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 582982532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 582982530}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &582982532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1698,19 +1674,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 643341501}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 643341499}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &643341501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,19 +1944,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 878914612}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 878914610}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &878914612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,7 +2021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251.86, y: -1886}
+  m_AnchoredPosition: {x: 0, y: -1870}
   m_SizeDelta: {x: 217.4, y: 217.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893260272
@@ -2127,19 +2079,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 893260274}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 893260272}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &893260274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3081,19 +3021,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1242933421}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1242933419}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1242933421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3748,19 +3676,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1473170370}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1473170368}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1473170370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4792,19 +4708,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1918061550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1918061548}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1918061550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5123,19 +5027,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2078670736}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2078670734}
-        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2078670736
 MonoBehaviour:
   m_ObjectHideFlags: 0
