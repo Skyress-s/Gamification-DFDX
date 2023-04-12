@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 194960540}
   - component: {fileID: 194960539}
   m_Layer: 5
-  m_Name: LoadDemo1
+  m_Name: Q (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S_GenericQuestion1
+          m_StringArgument: S_Task_1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &194960541
@@ -1216,7 +1216,7 @@ GameObject:
   - component: {fileID: 380526352}
   - component: {fileID: 380526351}
   m_Layer: 5
-  m_Name: Locked (0)
+  m_Name: Q (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1298,7 +1298,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 380526353}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 380526351}
+        m_TargetAssemblyTypeName: SceneHanlderComponent, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: S_Task_2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &380526353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1319,7 +1331,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9e6d77e67d4f9424b8893c1d12e81738, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e6e4cb9101ac7347a3a8a6f51445321, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4321,7 +4333,7 @@ GameObject:
   - component: {fileID: 1828061110}
   - component: {fileID: 1828061113}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CutScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
