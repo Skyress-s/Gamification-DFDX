@@ -7,6 +7,7 @@ public class GraphDrawer : MonoBehaviour {
     public RectTransform rectTransform;
     [Tooltip("First element is the constant, second is the linear coefficient, third is the quadratic coefficient, etc.")]
     [SerializeField]internal List<float> coefficiens = new List<float>();
+    [SerializeField] internal Vector2 xMinMax = new Vector2(0f, 1f);
     private void Start() {
         // Func<float,float> a = f => 22f * f 
 			
@@ -19,7 +20,7 @@ public class GraphDrawer : MonoBehaviour {
 
             return sum;
         };
-        var grapt =GraphHelpers.Create(rectTransform, func, 0.1f, new Vector2(0,0.6f));
+        var grapt =GraphHelpers.Create(rectTransform, func, 0.1f, xMinMax);
     }
 }
 
