@@ -12,16 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c09116a3450e645b38ea8657a35fc1, type: 3}
   m_Name: Task1
   m_EditorClassIdentifier: 
-  correctAnswer: 0
-  question: quesion juan
-  answer1: a for anders
-  answer2: b for anders
-  answer3: c for anders
-  answer4: d for anders
+  correctAnswer: 2
+  question: A car drives in a straight line with constant speed. Euler uses his stop-watch
+    to time the car as it passes by him. After 2 seconds, it has traveled 44 meters.
+    What is its average speed?
+  answer1: 44 m/s
+  ans1MathDialog:
+    guidance: 'Hint: Speed is distance over time!'
+    AnimationClip: {fileID: 0}
+  answer2: 11 m/s
+  ans2MathDialog:
+    guidance: 'Hint: Speed is distance over time!'
+    AnimationClip: {fileID: 0}
+  answer3: 22 m/s
+  ans3MathDialog:
+    guidance: Correct!!
+    AnimationClip: {fileID: 0}
+  answer4: 20 m/s
+  ans4MathDialog:
+    guidance: 'Hint: Speed is distance over time!'
+    AnimationClip: {fileID: 0}
   mathGuidance:
-  - guidance: Three VIM comboes a day keeps the mouse users away?
+  - guidance: 'Hint: Speed is distance over time!'
     AnimationClip: {fileID: 7400000, guid: 012bf1266c0c9ee44be85492bee83b68, type: 2}
-  - guidance: It's dangerous to go alone! Take this.
+  - guidance: 'Hint: What is 44m / 2s?'
     AnimationClip: {fileID: 7400000, guid: 012bf1266c0c9ee44be85492bee83b68, type: 2}
-  correctAnswerString: A
+  correctAnswerString: C
   incorrectAnswerString: B
