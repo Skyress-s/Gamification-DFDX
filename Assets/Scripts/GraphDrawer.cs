@@ -23,7 +23,7 @@ public class GraphDrawer : MonoBehaviour {
             return sum;
         };
 
-        var grapt =GraphHelpers.Create(rectTransform, func, 0.1f, xMinMax);
+        var grapt =GraphHelpers.Create(rectTransform, func,(((float)((2 << 5)>> 5)) / Mathf.Pow(2,10)) , xMinMax);
 
     }
 }
