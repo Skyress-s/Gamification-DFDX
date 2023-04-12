@@ -30,6 +30,8 @@ public class FirstLoginHandler : MonoBehaviour
     public void OnFinishWritingName()
     {
         Debug.Log(inputField);
+        PlayerPrefs.SetString("username", inputField.text);
+        PlayerPrefs.Save();
         // SceneHandler.LoadSceneWithDefaultTransition("S_TEMP");
         Scene prev = SceneManager.GetActiveScene();
         var handler = SceneManager.LoadSceneAsync(mainMenuScene, LoadSceneMode.Additive);
