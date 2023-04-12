@@ -9,6 +9,7 @@ public static class MathematicianUtils
         Transform helperBubble = Addressables.InstantiateAsync("HelperBubble", parent).WaitForCompletion().transform;
         helperBubble.localScale = Vector3.one * 0.1f;
         helperBubble.position = position;
+        // helperBubble.Translate(Vector3.forward * 100f);
         
         // set text
         helperBubble.GetComponentInChildren<TMP_Text>().text = mathDialog.guidance;
