@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: Task1
   m_EditorClassIdentifier: 
   correctAnswer: 2
-  question: A car drives in a straight line with constant speed. Euler uses his stop-watch
-    to time the car as it passes by him. After 2 seconds, it has traveled 44 meters.
-    What is its average speed?
+  question: A car drives past Euler. It has traveled 44 meters after 2 seconds. What
+    is its average speed?
   answer1: 44 m/s
   ans1MathDialog:
-    guidance: 'Hint: Speed is distance over time!'
+    guidance: Did you remember to divide by time?
     AnimationClip: {fileID: 0}
   answer2: 11 m/s
   ans2MathDialog:
-    guidance: 'Hint: Speed is distance over time!'
+    guidance: Did you divide twice?
     AnimationClip: {fileID: 0}
   answer3: 22 m/s
   ans3MathDialog:
@@ -30,7 +29,7 @@ MonoBehaviour:
     AnimationClip: {fileID: 0}
   answer4: 20 m/s
   ans4MathDialog:
-    guidance: 'Hint: Speed is distance over time!'
+    guidance: Very close!
     AnimationClip: {fileID: 0}
   mathGuidance:
   - guidance: 'Hint: Speed is distance over time!'
