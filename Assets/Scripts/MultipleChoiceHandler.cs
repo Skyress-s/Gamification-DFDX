@@ -2,6 +2,8 @@ using System;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class MultipleChoiceHandler : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class MultipleChoiceHandler : MonoBehaviour
     [SerializeField] private MultipleChoiceQuestion question;
     [SerializeField] private MultipleChoiceButtonsWrapper buttonsWrapper;
     [SerializeField] private TMP_Text title;
+    [SerializeField] private Button hintButton;
     
     public Action onRequestGuidance;
     
@@ -25,11 +28,9 @@ public class MultipleChoiceHandler : MonoBehaviour
         buttonsWrapper.SetupButtons(question);
         title.text = question.question;
 
-        
         onRequestGuidance += PlayGuidance;
-        
         buttonsWrapper.onButtonClicked.AddListener(OnButtonClicked);
-        
+        hintButton.onClick.AddListener(() => onRequestGuidance?.Invoke());
         
         
         // testing todo remove
@@ -55,8 +56,9 @@ public class MultipleChoiceHandler : MonoBehaviour
 
 
     void PlayGuidance() {
+        MathDialog dialog = question.mathGuidance[Random.Range(0, question.mathGuidance.Count)];
         var animator = _mathematician.GetComponentInChildren<Animator>();
-        animator.Play(question.mathGuidance[0].AnimationClip.name, 0, 0.1f);
+        animator.Play(dialog.AnimationClip.name, 0, 0.1f);
         Vector3[] corners = new Vector3[4];
         _mathematician.GetComponent<RectTransform>().GetWorldCorners(corners);
         MathematicianUtils.PlayMessage(question.mathGuidance[0], corners[1], transform);

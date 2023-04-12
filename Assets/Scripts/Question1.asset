@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c09116a3450e645b38ea8657a35fc1, type: 3}
   m_Name: Question1
   m_EditorClassIdentifier: 
-  correctAnswer: 2
+  correctAnswer: 0
   question: Is vim the ultimate way to naviage a text document?
   answer1: Yes! It's optimal 20XX
   ans1MathDialog:
