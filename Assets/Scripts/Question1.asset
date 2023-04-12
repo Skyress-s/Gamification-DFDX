@@ -10,14 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9c09116a3450e645b38ea8657a35fc1, type: 3}
-  m_Name: New Multiple Choice Question
+  m_Name: Question1
   m_EditorClassIdentifier: 
   correctAnswer: 0
   question: Is vim the ultimate way to naviage a text document?
   answer1: Yes! It's optimal 20XX
+  ans1MathDialog:
+    guidance: It's dangerous to go alone! Take this.
+    AnimationClip: {fileID: 7400000, guid: 9500cc7e5b941ac41be9c9ea7c2b8837, type: 2}
   answer2: No, its to clunky to learn
+  ans2MathDialog:
+    guidance: It's dangerous to go alone! Take this.
+    AnimationClip: {fileID: 7400000, guid: f68a29bafc4c8eb4694872e3fad31536, type: 2}
   answer3: No, what is vim?
+  ans3MathDialog:
+    guidance: It's dangerous to go alone! Take this.
+    AnimationClip: {fileID: 7400000, guid: f68a29bafc4c8eb4694872e3fad31536, type: 2}
   answer4: D
+  ans4MathDialog:
+    guidance: It's dangerous to go alone! Take this.
+    AnimationClip: {fileID: 7400000, guid: f68a29bafc4c8eb4694872e3fad31536, type: 2}
   mathGuidance:
   - guidance: Three VIM comboes a day keeps the mouse users away?
     AnimationClip: {fileID: 7400000, guid: 012bf1266c0c9ee44be85492bee83b68, type: 2}

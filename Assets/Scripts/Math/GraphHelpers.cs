@@ -53,7 +53,8 @@ public static class GraphHelpers
         (new GameObject("TOPLEFT")).transform.position = topRight;
         
         LineRenderer lr = go.AddComponent<LineRenderer>();
-        // lr.useWorldSpace = false;
+        lr.useWorldSpace = false;
+        go.transform.position += -Vector3.forward;
         lr.positionCount = points.Count;
 
         if (style == null) {

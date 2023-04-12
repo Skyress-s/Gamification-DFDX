@@ -541,9 +541,9 @@ Canvas:
   m_GameObject: {fileID: 246387286}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 2130974203}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1055,6 +1055,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3721536949304488966, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721536949304488966, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721536949304488966, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721536949304488966, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721536949304488966, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721536949304488966, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4223468784517847592, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1137,6 +1161,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4223468784517847592, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669113181613721003, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669113181613721003, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669113181613721003, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669113181613721003, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669113181613721003, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669113181613721003, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7764876215343753486, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
@@ -1315,7 +1363,7 @@ GameObject:
   - component: {fileID: 1911707982}
   - component: {fileID: 1911707981}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1354,14 +1402,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.105882354, g: 0.30588236, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 8b9b736ec42a41248b54af5335c3edc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
