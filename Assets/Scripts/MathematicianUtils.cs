@@ -16,7 +16,7 @@ public static class MathematicianUtils
         
         // lean tween sequence
         var seq = LeanTween.sequence();
-        seq.append(LeanTween.scale(helperBubble.gameObject, Vector3.one, 0.5f).setEaseOutBack());
+        seq.append(LeanTween.scale(helperBubble.gameObject, Vector3.one * 0.5f, 0.5f).setEaseOutBack());
         seq.append(4f);
         seq.append(LeanTween.scale(helperBubble.gameObject, Vector3.one * 0.1f, 0.5f).setEaseInCirc());
         seq.append(() => Object.Destroy(helperBubble.gameObject));
