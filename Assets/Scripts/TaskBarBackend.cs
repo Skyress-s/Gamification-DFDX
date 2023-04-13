@@ -72,10 +72,17 @@ public class TaskBarBackend : MonoBehaviour
 
     public void OnBackButtonClick()
     {
+        _prevSceneName = PlayerPrefs.GetString("prevScene", menuSceneName);
         PlayerPrefs.Save();
         if (SceneManager.GetActiveScene().name == menuSceneName)
         {
             Application.Quit();
+        }
+        if (_currentSceneName == noteSceneName || _currentSceneName == profileSceneName)
+        {
+            // Debug.LogError("return from notes");
+            _sceneHanlderComp.LoadScene(_prevSceneName);
+            return;
         }
         _sceneHanlderComp.LoadScene(menuSceneName);
     }
