@@ -23,33 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/S_Notes.unity
     guid: 0db671fa29f2f7b4aa607c42a0e714f1
-  - enabled: 0
-    path: Assets/Scenes/S_ProfileSettings.unity
-    guid: ade88d19033b88348aa7aae1c88be658
-  - enabled: 0
-    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level1_Dynamic.unity
-    guid: 71465df5f1d1ec043be26b756646198a
   - enabled: 1
     path: Assets/Scenes/S_ProfileSettings_V2.unity
     guid: e0b5bb96ad93ad04da6099d2d90ea404
   - enabled: 1
     path: Assets/Scenes/S_WorldOverView.unity
     guid: 81ea0d5f0c839c747b9ec3d8a8e329f7
-  - enabled: 0
-    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task1.unity
-    guid: 3306614af39ea054ca437e52bb3c368f
-  - enabled: 0
-    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task2.unity
-    guid: c27154e110117f84585f188c452aed0b
-  - enabled: 0
-    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task3.unity
-    guid: d850d083698c9d045bd0c46d98c2dd64
-  - enabled: 0
-    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task4.unity
-    guid: 14663240999a02c4d8334427f0643c3b
-  - enabled: 0
-    path: Assets/Scenes/StoryModeTasks/maybeDynamic/Level_Task5.unity
-    guid: 50bbefe6f7d95784b87c41c6d3a90352
   - enabled: 1
     path: Assets/Scenes/StoryModeTasks/S_Task_1.unity
     guid: 820a68ace419dd0449f2de57eab2d2e8
