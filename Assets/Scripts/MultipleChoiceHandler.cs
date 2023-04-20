@@ -12,9 +12,9 @@ public class MultipleChoiceHandler : MonoBehaviour
     [SerializeField] private MultipleChoiceButtonsWrapper buttonsWrapper;
     [SerializeField] private TMP_Text title;
     [SerializeField] private Button hintButton;
+    [SerializeField] TaskBarBackend taskBarBackend;
     
     public Action onRequestGuidance;
-    
     
     private Transform _mathematician;
     private void Start() {
@@ -45,6 +45,14 @@ public class MultipleChoiceHandler : MonoBehaviour
             buttonsWrapper.SetHighlight(2, Color.red);
             buttonsWrapper.SetHighlight(3, Color.red);
             buttonsWrapper.SetHighlight(arg0, Color.green);
+            Action yesAction = () => {
+                SceneHandler.LoadSceneWithDefaultTransition(taskBarBackend.nextSceneAsset.name);
+            };
+            Action noAction = () => {
+                SceneHandler.LoadSceneWithDefaultTransition(taskBarBackend.MenuSceneName);
+            };
+            
+            ModulWindow.ShowQuestion("bingus dingus, you got it right!", "Next Question", "Return to Map", yesAction, noAction);
         }
         else {
             // onRequestGuidance?.Invoke();

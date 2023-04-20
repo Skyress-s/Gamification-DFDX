@@ -9,7 +9,10 @@ public class TaskBarBackend : MonoBehaviour
     [SerializeField] private string noteSceneName;
     [SerializeField] private string profileSceneName;
     [SerializeField] private string menuSceneName;
-    [SerializeField] private SceneAsset nextSceneAsset;
+    
+    public string MenuSceneName => menuSceneName;
+    
+    [field:SerializeField] public SceneAsset nextSceneAsset { get;private set; }
 
     private string _currentSceneName;
     private string _prevSceneName = "S_MainMenu";

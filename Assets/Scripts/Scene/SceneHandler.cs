@@ -14,6 +14,7 @@ public static class SceneHandler {
     
     public static string PreviousSceneName => _previousSceneName;
     private static string _previousSceneName = "";
+    
     public static void LoadSceneWithDefaultTransition(string sceneName) {
         _previousSceneName =  SceneManager.GetActiveScene().name;
         var handle = SceneManager.LoadSceneAsync("S_GenericSceneTransition", LoadSceneMode.Additive);
