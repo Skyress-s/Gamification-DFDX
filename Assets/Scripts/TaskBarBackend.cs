@@ -1,3 +1,5 @@
+using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,15 +9,13 @@ public class TaskBarBackend : MonoBehaviour
     [SerializeField] private string noteSceneName;
     [SerializeField] private string profileSceneName;
     [SerializeField] private string menuSceneName;
+    [SerializeField] private SceneAsset nextSceneAsset;
 
     private string _currentSceneName;
     private string _prevSceneName = "S_MainMenu";
     private SceneHanlderComponent _sceneHanlderComp;
-    private DataManager _dataManager;
 
-    private void Start()
-    {
-        _dataManager = FindObjectOfType<DataManager>();
+    private void Start() {
         _sceneHanlderComp = GetComponent<SceneHanlderComponent>();
         _currentSceneName = SceneManager.GetActiveScene().name;
     }
