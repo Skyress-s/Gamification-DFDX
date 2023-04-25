@@ -52,7 +52,7 @@ public class MultipleChoiceHandler : MonoBehaviour
                 SceneHandler.LoadSceneWithDefaultTransition(taskBarBackend.MenuSceneName);
             };
             
-            ModulWindow.ShowQuestion("bingus dingus, you got it right!", "Next Question", "Return to Map", yesAction, noAction);
+            ModulWindow.ShowQuestion("Congratulations! You got it right!", "Next Question", "Return to Map", yesAction, noAction);
         }
         else {
             // onRequestGuidance?.Invoke();

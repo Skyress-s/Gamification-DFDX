@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 // Task<float> asyncFloat = SomeOtherOperation(); // asyncFloat.Start();
@@ -14,8 +15,18 @@ public static class SceneHandler {
     
     public static string PreviousSceneName => _previousSceneName;
     private static string _previousSceneName = "";
+
+    private static float _lastTransitionTimeStamp = 0f;
     
     public static void LoadSceneWithDefaultTransition(string sceneName) {
+        if (Time.time > _lastTransitionTimeStamp + 2f) {
+            _lastTransitionTimeStamp = Time.time;
+        }
+        else 
+            return;
+       
+        
+        
         _previousSceneName =  SceneManager.GetActiveScene().name;
         var handle = SceneManager.LoadSceneAsync("S_GenericSceneTransition", LoadSceneMode.Additive);
         handle.completed += operation => {
