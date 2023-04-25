@@ -39,12 +39,14 @@ public class MultipleChoiceHandler : MonoBehaviour
     }
 
     private void OnButtonClicked(int arg0) {
+        Color green = new Color(55f/255, 250f/255f, 90f/255f, 0.8f);
+        Color red = new Color(237f/255, 106f/255f, 94f/255f, 0.5f);
         if (arg0 == (int)question.correctAnswer) {
-            buttonsWrapper.SetHighlight(0, Color.red);
-            buttonsWrapper.SetHighlight(1, Color.red);
-            buttonsWrapper.SetHighlight(2, Color.red);
-            buttonsWrapper.SetHighlight(3, Color.red);
-            buttonsWrapper.SetHighlight(arg0, Color.green);
+            buttonsWrapper.SetHighlight(0, red);
+            buttonsWrapper.SetHighlight(1, red);
+            buttonsWrapper.SetHighlight(2, red);
+            buttonsWrapper.SetHighlight(3, red);
+            buttonsWrapper.SetHighlight(arg0, green);
             Action yesAction = () => {
                 SceneHandler.LoadSceneWithDefaultTransition(taskBarBackend.nextSceneName);
             };
