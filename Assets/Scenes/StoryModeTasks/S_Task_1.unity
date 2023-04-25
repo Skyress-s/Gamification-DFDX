@@ -517,6 +517,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 102900000, guid: 0db671fa29f2f7b4aa607c42a0e714f1, type: 3}
     - target: {fileID: 1428604520187911692, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: <nextSceneName>k__BackingField
+      value: S_Task_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1428604520187911692, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
       propertyPath: <nextSceneAsset>k__BackingField
       value: 
       objectReference: {fileID: 102900000, guid: b87e118832836bb4abb1dcf525b8325a, type: 3}

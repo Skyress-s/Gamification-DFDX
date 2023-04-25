@@ -1,5 +1,4 @@
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,10 +8,11 @@ public class TaskBarBackend : MonoBehaviour
     [SerializeField] private string noteSceneName;
     [SerializeField] private string profileSceneName;
     [SerializeField] private string menuSceneName;
-    
+
     public string MenuSceneName => menuSceneName;
-    
-    [field:SerializeField] public SceneAsset nextSceneAsset { get;private set; }
+
+    [field:SerializeField] public string nextSceneName { get; private set; }
+
 
     private string _currentSceneName;
     private string _prevSceneName = "S_MainMenu";

@@ -515,6 +515,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1428604520187911692, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
+      propertyPath: <nextSceneName>k__BackingField
+      value: S_MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1428604520187911692, guid: 385b4fdd361e3204c91ea3c85e4e6cd9, type: 3}
       propertyPath: <nextSceneAsset>k__BackingField
       value: 
       objectReference: {fileID: 102900000, guid: 9d60aaf6e180bb340bc972f7014209e5, type: 3}

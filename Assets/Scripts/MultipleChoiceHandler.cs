@@ -46,7 +46,7 @@ public class MultipleChoiceHandler : MonoBehaviour
             buttonsWrapper.SetHighlight(3, Color.red);
             buttonsWrapper.SetHighlight(arg0, Color.green);
             Action yesAction = () => {
-                SceneHandler.LoadSceneWithDefaultTransition(taskBarBackend.nextSceneAsset.name);
+                SceneHandler.LoadSceneWithDefaultTransition(taskBarBackend.nextSceneName);
             };
             Action noAction = () => {
                 SceneHandler.LoadSceneWithDefaultTransition(taskBarBackend.MenuSceneName);
